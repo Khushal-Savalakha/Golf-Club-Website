@@ -12,20 +12,20 @@
 
 
 ### 2. **Table of Contents**
-
-  ## Table of Contents
+   
+## Table of Contents
 
 | Section                    | Description                                                                 |
 |----------------------------|-----------------------------------------------------------------------------|
-| [Overview](#overview)      | The project is a website for Sidcup Family Golf, featuring interactive and animated elements to enhance user experience. It includes a coffee shop, golf lessons, and more. |
+| [Overview](overview)     | The project is a website for Sidcup Family Golf, featuring interactive and animated elements to enhance user experience. It includes a coffee shop, golf lessons, and more. |
 | [Key Features](#key-features) | Interactive navigation, dynamic animations using GSAP, custom cursor effects, and a progress button for easy scrolling. |
 | [Project Structure](#project-structure) | The project is organized into HTML and JavaScript files, with styles and assets in their respective folders. The `index.html` file handles the structure, while `script.js` manages dynamic functionality. |
 | [Efficient Use of JavaScript](#efficient-use-of-javascript) | JavaScript is used for dynamic effects such as custom cursors, animations with GSAP, and handling scroll-based progress indicators. |
 | [Installation and Setup](#installation-and-setup) | To set up the project, clone the repository, install dependencies via npm (for any JavaScript packages), and open `index.html` in a browser. No further installation is required for basic setup. |
-| [Future Enhancements](#future-enhancements) | Planned enhancements include adding more interactive elements, improving accessibility features, and expanding the site's content. |
+| [Future Enhancements](#future-enhancements) | Planned enhancements include adding more interactive elements, improving accessibility features, and expanding the site's content like adding `golf lessons page `. |
 | [Contributing](#contributing) | Contributions are welcome. Please submit a pull request or open an issue for any improvements or bug fixes. Follow the coding standards and include relevant tests. |
 | [License](#license)        | The project is licensed under the MIT License. See the `LICENSE` file for details. |
-| [Contact](#contact)        | For any inquiries or feedback, please contact the project maintainer at example@example.com. |
+| [Contact](#contact)        | For any inquiries or feedback, please contact at khushal.sav@gmail.com. |
 
 
 ### 3. **Screenshots and GIFs**
