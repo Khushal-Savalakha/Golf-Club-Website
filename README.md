@@ -167,6 +167,7 @@ window.addEventListener('load', initAnimations);
 ### 10. **Embedded YouTube Video**
 
    ## 🎥 Demo Video
-
-   [![Watch the video](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID/maxresdefault.jpg)](https://youtu.be/YOUTUBE_VIDEO_ID)
-   
+```
+  https://www.youtube.com/watch?v=NV30LJdvy3c)
+  https://www.youtube.com/watch?v=4QN9VNHILHo)
+   ```
