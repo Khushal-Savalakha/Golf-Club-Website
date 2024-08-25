@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up & Sign In</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #9dcb20;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        form {
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+            background-color: green;
+        }
+
+        form input {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        #password_val,
+        #name_val {
+            color: red;
+        }
+
+        #last {
+            background-color: rgb(100, 100, 180);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form id="signinForm" onsubmit="return signin_validate()" action="cafe.html">
+            <h2>Sign In</h2>
+            <input type="text" id="signinUsername" placeholder="Username">
+            <div id="name_val"></div>
+            <input type="password" id="signinPassword" placeholder="Password">
+            <div id="password_val"></div>
+            <input type="submit" placeholder="signin" id="last">
+            <p>Don't have an account? <a href="#cafe.html" class='user_var' id="for_signUp" onclick="changes(this)">Sign
+                    Up</a></p>
+        </form>
+    </div>
+
+    <script>
+        // Select elements with the class user_var
+        var u_var = document.querySelectorAll('.user_var');
+
+        // Function to toggle between Sign Up and Sign In forms
+        function changes(obj) {
+            if (obj.id == "for_signin") {
+                // Update the HTML content of the container with the Sign In form
+                document.querySelector(".container").innerHTML =
+                    `<form id="signinForm" onsubmit="return signin_validate()" action="cafe.html">
+                        <h2>Sign In</h2>
+                        <input type="text" id="signinUsername" placeholder="Username">
+                        <div id="name_val"></div>
+                        <input type="password" id="signinPassword" placeholder="Password">
+                        <div id="password_val"></div>
+                        <input type="submit" placeholder="signin" id="last">
+                        <p>Don't have an account? <a href="#cafe.html" class='user_var' id="for_signUp" onclick="changes(this)">Sign Up</a></p>
+                    </form>`;
+            } else if (obj.id == 'for_signUp') {
+                // Update the HTML content of the container with the Sign Up form
+                document.querySelector(".container").innerHTML =
+                    `<form id="signupForm" onsubmit="return signup_validate()" action="cafe.html"">
+                        <h2>Sign Up</h2>
+                        <input type="text" id="signupUsername" placeholder="Username">
+                        <div id="name_val"></div>
+
+                        <input type="email" id="signupEmail" placeholder="Email">
+                        <div id="email_checked"></div>
+
+                        <input type="password" id="signupPassword" placeholder="Password">
+                        <div id="password_val"></div>
+                        <input type="submit" placeholder="signup" id="last">
+                        <p>Already have an account? <a href="#" class="user_var" id="for_signin" onclick="changes(this)">Sign In</a></p>
+                    </form>`
+            }
+        }
+
+        function signup_validate() {
+            let pat_e = /^\w+([\.-]?\w+)*@\w+([\.-]?\w{2,3})(\.\w{2,3})$/;
+            let email = document.getElementById("signupEmail").value;
+            let password = document.getElementById("signupPassword").value;
+            let name = document.getElementById('signupUsername').value;
+            var flag = true;
+            if (!pat_e.test(email)) {
+                let e_check = document.getElementById("email_checked");
+                e_check.style.color = "red";
+                e_check.innerHTML = "Invalid Email";
+                flag = false;
+            } else {
+                let e_check = document.getElementById("email_checked");
+                e_check.style.color = "green";
+                e_check.innerHTML = "Valid Email";
+            }
+
+            if (password.length < 8) {
+                let p_check = document.getElementById("password_val");
+                p_check.style.color = "red";
+                p_check.innerHTML = "Password should be at least 8 characters long";
+                flag = false;
+            } else {
+                let p_check = document.getElementById("password_val");
+                p_check.style.color = "green";
+                p_check.innerHTML = "Valid Password";
+            }
+
+            if (name.length <= 0) {
+                let p_check = document.getElementById("name_val");
+                p_check.style.color = "red";
+                p_check.innerHTML = "Write your name!";
+                flag = false;
+            } else {
+                let p_check = document.getElementById("name_val");
+                p_check.style.color = "green";
+                p_check.innerHTML = "Valid";
+            }
+            if (flag == true) {
+                // Only return true if all validations pass
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+        function signin_validate() {
+            let name = document.getElementById("signinUsername").value;
+            let password = document.getElementById("signinPassword").value;
+            var flag = true
+            if (name == "") {
+                let name_check = document.getElementById("name_val");
+                name_check.innerHTML = "Enter name!";
+                flag = false;
+            } else {
+                let name_check = document.getElementById("name_val");
+                name_check.innerHTML = "Valid name";
+            }
+
+            if (password.length < 8) {
+                let p_check = document.getElementById("password_val");
+                p_check.style.color = "red";
+                p_check.innerHTML = "Password should be at least 8 characters long!";
+                flag = false;
+            } else {
+                let p_check = document.getElementById("password_val");
+                p_check.style.color = "green";
+                p_check.innerHTML = "Valid Password";
+            }
+            if (flag == true) {
+                // Only return true if all validations pass
+                return true;
+            } else {
+                return false;
+            }
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

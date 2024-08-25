@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="Bookrange.css" />
+</head>
+
+<body>
+    <div id="progress">
+        <span id="progress-value">&#x1F815;</span>
+    </div>
+    <div id="nav">
+        <a href="index.html" ><img src="Assets/logo-white.svg" style="float: left;"></a>
+        <nav class="navbar navbar-expand-sm" style="margin-left:200px">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item" >
+                        <a class="nav-link" href="cafe.html"  >COFFEE SHOP</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" href="Bookrange.html" id="current">BOOKRANGE</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" href="#">GOLFLESSONS</a>
+                    </li>
+                    <li class="nav-item" >
+                        <a class="nav-link" href="Sid_Cup_Sign_up_Sign_in.html">ACCOUNT</a>
+                    </li>
+                </ul>
+            </div>
+        </nav> <!-- Added missing closing tag -->
+    </div>
+    </div>
+    </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+    <div id="main">
+        <div id="page1">
+            <div id="bookrange">
+                <hr>
+                <h1>Driving Range</h1>
+                <div class="row">
+                    <div class="col-5" id="button1" onclick="customer_choice(this)">Driving Range Session 55 Mins[Unlimited Balls]</div>
+                    <div class="col-5" id="button2" onclick="customer_choice(this)">Driving Range Session 115 Mins[Unlimited Balls]</div>
+                </div>
+                <div id="selection_button" class="row">
+                    <label>
+                        <img src="Assets/golf-player.jpg" alt="Search Icon">
+                        <select id="bay" class="buttons col-3" required>
+                            <option selected>No. of Bays</option>
+                            <option>1</option>
+                            <option>2</option>
+                        </select>
+                    </label>
+                    <lable id="date_label"> Date:  <input type="date" id="date" name="date" class="buttons col-3" required></lable>
+                    <label id="time">Time: <input type="time" id="time" name="time" class="buttons col-3" required></label>
+                </div>
+                <button type="submit" id="confirm_choices">Confirm</button>
+            </div>
+        </div>
+        <div id="footer">
+            <img
+              src="Assets/dots-side_last.svg"
+              alt=""
+            />
+            <div id="f1">
+              <img
+                src="Assets\logo-white.svg"
+                alt=""
+              />
+            </div>
+            <div id="f2">
+              <h3>TOPTRACER Ranges</h3>
+              <h3>Golf Lessons</h3>
+              <h3>Adventure Golf</h3>
+            </div>
+            <div id="f3">
+              <h3>coffee shop</h3>
+              <h3>LEAGUES</h3>
+              <h3>Contact us</h3>
+            </div>
+            <div id="f4">
+              <h4>
+                A20, SIDCUP BYPASS <br />
+                CHISLEHURST <br />
+                KENT <br />
+                BR7 6RP <br />
+                TEL: 0208 309 0181 <br />
+                GET DIRECTIONS <br />
+              </h4>
+            </div>
+          </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+        integrity="sha512-qF6akR/fsZAB4Co1QDDnUXWnaQseLGXoniuSuSlPQK6+aWhlMZcHzkasCSlnWoe+TJuudlka1/IQ01Dnhgq95g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollTrigger.min.js"
+        integrity="sha512-IHDCHrefnBT3vOCsvdkMvJF/MCPz/nBauQLzJkupa4Gn4tYg5a6VGyzIrjo6QAUy3We5HFOZUlkUpP0dkgE60A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="Bookrange.js"></script>
+</body>
+
+</html>
