@@ -171,3 +171,7 @@ window.addEventListener('load', initAnimations);
   https://www.youtube.com/watch?v=NV30LJdvy3c)
   https://www.youtube.com/watch?v=4QN9VNHILHo)
    ```
+To Visit Site:```https://khushal-savalakha.github.io/Golf-Club-Website/```
+Here's a more professional version of your message:
+
+Due to the large video size, the backend video for the first page is not uploaded, resulting in a blank display. If you need access to the video, please feel free to message me on LinkedIn!.
