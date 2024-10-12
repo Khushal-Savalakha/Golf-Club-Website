@@ -9,7 +9,9 @@
 ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+## Live Demo
 
+You can view the live demo of the website here: [Golf Club Website](https://khushal-savalakha.github.io/Golf-Club-Website/)
 
 ### 2. **Table of Contents**
    
@@ -32,8 +34,10 @@
   
    ## Preview
 
-![Golf Club Homepage](https://assets.awwwards.com/awards/element/2023/06/6481acf826266951398837.jpg)
-![Golf Club Coffee](https://assets.awwwards.com/awards/element/2023/06/6481aadd5eaa9887275008.jpg)   
+![Golf Club Homepage](https://github.com/user-attachments/assets/21882e19-acea-4e68-9966-a9aa697fcede)
+![Golf Club Homepage with animation effect](https://github.com/user-attachments/assets/7cf3a07f-5040-4ef9-a329-9b08803695a4)
+![Cafe Page](https://github.com/user-attachments/assets/28a09fc5-87a3-4de8-8068-96dcd104a579)
+![Cafe Menu page](https://github.com/user-attachments/assets/ed78eb6b-891e-4bec-9c79-ff5d39c1b126)
 
 ### 4. **Mermaid Diagrams**
    - Use **Mermaid** syntax to include flowcharts, Gantt charts, or sequence diagrams directly in your README for visualizing the project structure or processes.
@@ -167,10 +171,9 @@ window.addEventListener('load', initAnimations);
 ### 10. **Embedded YouTube Video**
 
    ## 🎥 Demo Video
-```
-  https://www.youtube.com/watch?v=NV30LJdvy3c)
-  https://www.youtube.com/watch?v=4QN9VNHILHo)
-   ```
-To Visit Site:```https://khushal-savalakha.github.io/Golf-Club-Website/```
-
+You can watch the demo videos for this project here: 
+- [Demo Video 1](https://www.youtube.com/watch?v=NV30LJdvy3c)
+- [Demo Video 2](https://www.youtube.com/watch?v=4QN9VNHILHo)
+### To Visit Site:
+[Visit Golf Club Website](https://khushal-savalakha.github.io/Golf-Club-Website/)
 Due to the large video size, the backend video for the first page is not uploaded, resulting in a blank display. If you need access to the video, please feel free to message me on LinkedIn!.
