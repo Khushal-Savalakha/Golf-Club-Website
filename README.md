@@ -9,6 +9,9 @@
 ![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+https://github.com/user-attachments/assets/20c8afc4-f708-454a-8b68-70568525db01
+
 ## Live Demo
 
 You can view the live demo of the website here: [Golf Club Website](https://khushal-savalakha.github.io/Golf-Club-Website/)
@@ -38,6 +41,8 @@ You can view the live demo of the website here: [Golf Club Website](https://khus
 ![Golf Club Homepage with animation effect](https://github.com/user-attachments/assets/7cf3a07f-5040-4ef9-a329-9b08803695a4)
 ![Cafe Page](https://github.com/user-attachments/assets/28a09fc5-87a3-4de8-8068-96dcd104a579)
 ![Cafe Menu page](https://github.com/user-attachments/assets/ed78eb6b-891e-4bec-9c79-ff5d39c1b126)
+![image](https://github.com/user-attachments/assets/4e2b7c14-552c-4db1-a3a1-5e7b33396fbb)
+
 
 ### 4. **Mermaid Diagrams**
    - Use **Mermaid** syntax to include flowcharts, Gantt charts, or sequence diagrams directly in your README for visualizing the project structure or processes.
